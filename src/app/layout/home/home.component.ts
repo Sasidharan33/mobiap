@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  @ViewChild('slickModal') slickModal!: SlickCarouselComponent ;
   slides = [
     {img: "../../../assets/images/banner.jpg"},
     {img: "../../../assets/images/banner1.png"},
@@ -14,14 +16,21 @@ export class HomeComponent {
   slideConfig = {slidesToShow: 1,
      slidesToScroll: 1,
     //  autoplay:true,
-     autoplaySpeed:3000,arrows:true,dots:true};
+     autoplaySpeed:3000,arrows:false,dots:true};
 
   addSlide() {
     this.slides.push({img: "http://placehold.it/350x150/777777"})
   }
+  next() {
+    this.slickModal.slickNext();
+  }
+
+  prev() {
+    this.slickModal.slickPrev();
+  }
 
   removeSlide() {
-    this.slides.length = this.slides.length - 1;
+    this.slides.length = this.slides.length - 2;
   }
 
   slickInit(e:any) {
