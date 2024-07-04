@@ -1,0 +1,13 @@
+.carr{
+  width: 99%;
+  height: 500px;
+  /* border-style: dotted; */
+}
+.carousel{
+  width: 100%;
+  height: 500px;
+}
+.carousel img{
+  width: 100%;
+  height: 500px;
+}

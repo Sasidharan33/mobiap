@@ -1,0 +1,41 @@
+.topbar{
+  width: 100%;
+  height: 100px;
+  background-image: url(../../../assets/images/hea.png);
+  text-align: center;
+}
+.topbar img{
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin: 20px 0 0 5%;
+}
+.topbar ul{
+  list-style-type: none;
+}
+.home-link{
+  margin-left: 30%;
+  margin-top: 30px;
+}
+.topbar ul li a{
+  text-decoration: none;
+  float: left;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+.about-link{
+  margin-left: 3%;
+  margin-top: 30px;
+}
+.icons{
+  width: 25px;
+  height: 25px;
+}
+.link-icon{
+  margin-left: 3%;
+  margin-top: 5px;
+}
+
+
+
